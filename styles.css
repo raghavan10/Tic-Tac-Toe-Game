@@ -8,7 +8,8 @@
 body {
     background-color: #DCF763;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
 }
 
 .container {
@@ -25,7 +26,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1vmin; /* Reduced gap for better responsiveness */
+    gap: 1vmin;
+    /* Reduced gap for better responsiveness */
 }
 
 .box {
@@ -34,7 +36,8 @@ body {
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    font-size: 6vmin; /* Adjusted for smaller screens */
+    font-size: 6vmin;
+    /* Adjusted for smaller screens */
     color: #435058;
     background-color: #F1F2EE;
     cursor: pointer;
@@ -89,31 +92,38 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .game {
-        height: 80vmin; /* Expand game board for smaller screens */
+        height: 80vmin;
+        /* Expand game board for smaller screens */
         width: 80vmin;
-        gap: 2vmin; /* Adjust gap for better appearance */
+        gap: 2vmin;
+        /* Adjust gap for better appearance */
     }
 
     .box {
-        height: 22vmin; /* Larger cells for smaller screens */
+        height: 22vmin;
+        /* Larger cells for smaller screens */
         width: 22vmin;
-        font-size: 8vmin; /* Increase font size for better visibility */
+        font-size: 8vmin;
+        /* Increase font size for better visibility */
     }
 
     #msg {
-        font-size: 3rem; /* Larger text for clarity */
+        font-size: 3rem;
+        /* Larger text for clarity */
     }
 }
 
 @media (max-width: 480px) {
     .game {
-        height: 90vmin; /* Full-screen board for very small screens */
+        height: 90vmin;
+        /* Full-screen board for very small screens */
         width: 90vmin;
         gap: 3vmin;
     }
 
     .box {
-        height: 25vmin; /* Even larger cells */
+        height: 25vmin;
+        /* Even larger cells */
         width: 25vmin;
         font-size: 10vmin;
     }
